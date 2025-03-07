@@ -1,0 +1,3150 @@
+{
+  "description": {
+    "generated": "In the described traffic scenario, a bus initiates movement before a traffic light changes, failing to notice several motorcycles in its blind spot. As the bus accelerates, it drives over the motorcycles, leading to a potentially serious incident due to the lack of visibility and attention to surrounding vehicles. \n\nAdditionally, a secondary collision occurs when a vehicle enters the junction from the same approach as the vehicle in front of it. The rear-end collision happens as the following vehicle fails to react in time to the deceleration of the leading vehicle, indicating a lapse in attention or anticipation of traffic flow conditions at the intersection.",
+    "manual": "",
+    "prompt": "Could you furnish a concise, fact-based description of the given traffic scenario in one or two paragraphs? Please refrain from offering a summary paragraph. Take the time to thoroughly review the following text, as this information is important to me.\nBus starts moving before the light changes and drives over several motorcycles that where in its blind spot\nMotorcycle, \nRear end collision entering junction from the same arm where the vehicle ahead is slowing down."
+  },
+  "verificationReport": {
+    "generated": "# Verification Plan for Automated Vehicle Systems in Response to Traffic Accident Scenario\n\n## Abstract\n\nThis report outlines a comprehensive verification plan to examine the deficiencies in the perception and planning systems of an automated vehicle (AV) involved in a traffic accident. The incident occurs when a bus initiates movement before a traffic light changes, failing to detect motorcycles in its blind spot, consequently driving over them. Additionally, a secondary collision occurs due to a vehicle's failure to anticipate the deceleration of the leading vehicle at the intersection. This plan establishes the objectives of verification tests and categorises the necessary verification steps for both the perception and planning systems.\n\n## A. Objective of the Test\n\nThe objective of this verification plan is to assess the functionality and reliability of the automated vehicle's perception and planning systems in typical traffic scenarios. Specifically, the goals are to:\n\n1. **Evaluate Perception System:** Ensure the automated vehicle can accurately detect surrounding vehicles, including those in its blind spot, and assess their movement patterns.\n   \n2. **Evaluate Planning System:** Verify the ability of the automated vehicle’s planning system to respond appropriately to changes in the traffic flow and to anticipate the actions of other vehicles, particularly in complex scenarios such as intersections.\n\n3. **Identify Failures and Propose Improvements:** Highlight any deficiencies identified in the systems during testing and propose potential modifications or enhancements to mitigate these risks in real-world operations.\n\n## B. Verification for the Perception System\n\n### 1. Verification Steps\n\n#### a. Object Detection\n- **Objective:** Confirm that the perception system accurately identifies and tracks all relevant objects within the vehicle's operational environment.\n- **Tasks:**\n  - Implement tests under varying traffic conditions, including high-density and low-density scenarios.\n  - Analyse the system’s ability to detect motorcycles, particularly in blind spots, using obstacle detection algorithms.\n  \n#### b. Blind Spot Monitoring\n- **Objective:** Ensure that the vehicle can identify objects (motorcycles) in its blind spot.\n- **Tasks:**\n  - Conduct simulations where motorcycles approach the vehicle's blind spot and assess the system’s detection capabilities.\n  - Verify the effectiveness of the sensor technologies used (e.g., LIDAR, cameras) in identifying motorcycles in critical situations.\n  \n#### c. Speed and Position Tracking\n- **Objective:** Ensure accurate tracking of the speed and position of surrounding vehicles.\n- **Tasks:**\n  - Test the system’s ability to monitor the deceleration and acceleration patterns of vehicles ahead, especially in scenarios mimicking the rear-end collision.\n  - Verify that the system accurately detects brake lights of the vehicle in front to anticipate its movement.\n\n### 2. Performance Metrics\n- Detection accuracy rate (≥ 90%)\n- Latency in detection time (≤ 3s)\n- False positive and negative rates in object identification\n\n## C. Verification for the Planning System\n\n### 1. Verification Steps\n\n#### a. Anticipation of Traffic Flow\n- **Objective:** Confirm that the planning system effectively predicts the behaviour of surrounding vehicles to avoid collisions.\n- **Tasks:**\n  - Simulate various traffic scenarios in an intersection setting and assess the vehicle’s response to changes in traffic light signals and vehicle speeds.\n  - Determine the system’s ability to predict the actions of the vehicle ahead, especially in rapid deceleration situations.\n\n#### b. Scenario-based Decision Making\n- **Objective:** Verify that the planning system makes appropriate decisions based on detected risks and dynamic traffic conditions.\n- **Tasks:**\n  - Develop test scenarios where the leading vehicle decelerates unexpectedly, and assess the reactive measures taken by the automated vehicle.\n  - Examine the system's ability to establish safe stopping distances and execute emergency responses as necessary.\n\n#### c. Prioritisation and Risk Assessment \n- **Objective:** Ensure the planning system prioritises the safety of vulnerable road users (e.g., motorcyclists).\n- **Tasks:**\n  - Simulate various situations where vulnerable road users are present and observe the vehicle’s decision-making process in these contexts.\n  - Verify the system’s performance in assessing the potential consequences of its actions, especially in junction scenarios.\n  \n### 2. Performance Metrics\n- Reaction time to a sudden event (≤ 0.5s)\n- Decision accuracy (≥ 95%)\n- Number of successful avoidance maneuvers\n\n## Conclusion\n\nThis verification plan underscores the necessity of robust testing for both the perception and planning systems of automated vehicles, particularly in complex traffic scenarios that pose high risks. By executing this tailored verification strategy, we aim to identify faults and contribute to the enhancement of automated vehicle safety standards, ultimately preventing similar incidents in the future. The structured approach outlined herein will allow for a thorough examination and verification of the systems involved, establishing a safety foundation for fully autonomous vehicle operations.",
+    "manual": "",
+    "prompt": "Please develop a comprehensive verification plan in the style of an academic report for the below accident for an automated vehicle describing (A) the objective of the test, (B) verification for the perception system, and (C) verification for the planning system. The accident is as follows: In the described traffic scenario, a bus initiates movement before a traffic light changes, failing to notice several motorcycles in its blind spot. As the bus accelerates, it drives over the motorcycles, leading to a potentially serious incident due to the lack of visibility and attention to surrounding vehicles. \n\nAdditionally, a secondary collision occurs when a vehicle enters the junction from the same approach as the vehicle in front of it. The rear-end collision happens as the following vehicle fails to react in time to the deceleration of the leading vehicle, indicating a lapse in attention or anticipation of traffic flow conditions at the intersection. The victim had 0.3000020000000001s to react and the accident severity was 3. The following are some ideas for verification steps based on the accident type: The Causer is Bus,  Motorcycle,  Motorcycle,  The Victim is Motorcycle,  \"Verify that the vehicle ahead is slowing down. Verify that brake light are detected. \". Additionally please categorise the verification steps and use UK spelling and grammar conventions."
+  },
+  "severity": -1,
+  "migrationID": "5c0fce879258a4002d048fb4",
+  "migrationDate": 1543502355615,
+  "accidentDate": 1499742000000,
+  "location": {
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        103.79652117694053,
+        1.2745846328115817
+      ]
+    },
+    "id": "5c0fce879258a4002d048fb4"
+  },
+  "streetname": "65 Pasir Panjang Road, Queenstown, Singapore 118507",
+  "verification": "PREMIGRATION",
+  "weather": [
+    "6006"
+  ],
+  "time": [],
+  "occlusion": [],
+  "behaviour": [],
+  "accidentTypes": [
+    "331"
+  ],
+  "isComplex": false,
+  "isEdge": false,
+  "isChain": false,
+  "archetype": "CORNER",
+  "comment": "Bus starts moving before the light changes and drives over several motorcycles that where in its blind spot",
+  "boundingBoxes": [
+    {
+      "frame": 46,
+      "x": 0,
+      "y": 0.011764705882352941,
+      "w": 0.2462809917355372,
+      "h": 0.961764705882353,
+      "desc": "Bus starting to move",
+      "type": "ONETWENTY"
+    },
+    {
+      "frame": 57,
+      "x": 0.0049586776859504135,
+      "y": 0.014705882352941176,
+      "w": 0.3256198347107438,
+      "h": 0.9352941176470588,
+      "desc": "Bus not stopping for stopped motorcycles at intersection",
+      "type": "ONEEIGHTY"
+    },
+    {
+      "frame": 46,
+      "x": 0,
+      "y": 0.011764705882352941,
+      "w": 0.2462809917355372,
+      "h": 0.961764705882353,
+      "desc": "Bus starting to move",
+      "type": "ONETWENTY"
+    },
+    {
+      "frame": 57,
+      "x": 0.0049586776859504135,
+      "y": 0.014705882352941176,
+      "w": 0.3256198347107438,
+      "h": 0.9352941176470588,
+      "desc": "Bus not stopping for stopped motorcycles at intersection",
+      "type": "ONEEIGHTY"
+    }
+  ],
+  "scenario": {
+    "timestamps": {
+      "T0": 0,
+      "T6": 16.6
+    },
+    "crashEnergy": 0,
+    "impactForce": 0
+  },
+  "actors": [
+    {
+      "type": "BUS",
+      "involvement": "CAUSER",
+      "severity": 0,
+      "timestamps": {
+        "T1": -1,
+        "T2": -1,
+        "T3": -1,
+        "T4": -1,
+        "T5": -1
+      },
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "trajectory": [
+        {
+          "frame": 0,
+          "state": "KEYFRAME",
+          "position": [
+            103.79660744528658,
+            1.2745508421095588,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 1,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660717141249,
+            1.2745509216352324,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 2,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660689753842,
+            1.2745510011609051,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 3,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660662366433,
+            1.2745510806865776,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 4,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660634979025,
+            1.2745511602122506,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 5,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660607591616,
+            1.2745512397379235,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 6,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660580204207,
+            1.274551319263596,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 7,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660552816799,
+            1.2745513987892685,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 8,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7966052542939,
+            1.2745514783149412,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 9,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660498041983,
+            1.2745515578406135,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 10,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660470654574,
+            1.2745516373662862,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 11,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660443267166,
+            1.2745517168919587,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 12,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660415879756,
+            1.274551796417631,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 13,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660388492348,
+            1.2745518759433037,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 14,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660361104939,
+            1.2745519554689761,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 15,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7966033371753,
+            1.2745520349946484,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 16,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660306330123,
+            1.2745521145203207,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 17,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660278942714,
+            1.274552194045993,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 18,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660251555306,
+            1.2745522735716655,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 19,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660224167897,
+            1.2745523530973377,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 20,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660196780489,
+            1.2745524326230102,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 21,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7966016939308,
+            1.2745525121486818,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 22,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660142005672,
+            1.274552591674354,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 23,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660114618264,
+            1.2745526712000264,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 24,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660087230855,
+            1.2745527507256986,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 25,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660059843447,
+            1.2745528302513707,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 26,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660032456037,
+            1.2745529097770425,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 27,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79660005068628,
+            1.2745529893027148,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 28,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7965997768122,
+            1.2745530688283866,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 29,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659950293812,
+            1.2745531483540586,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 30,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659922906404,
+            1.2745532278797305,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 31,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659895518995,
+            1.2745533074054025,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 32,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659868131586,
+            1.2745533869310743,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 33,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659840744178,
+            1.274553466456746,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 34,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659813356768,
+            1.274553545982418,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 35,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7965978596936,
+            1.2745536255080898,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 36,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659758581953,
+            1.2745537050337616,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 37,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659731194543,
+            1.2745537845594337,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 38,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659703807135,
+            1.274553864085105,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 39,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659676419726,
+            1.2745539436107767,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 40,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659649032318,
+            1.2745540231364485,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 41,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659621644909,
+            1.27455410266212,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 42,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659594257501,
+            1.2745541821877917,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 43,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659566870093,
+            1.2745542617134633,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 44,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659539482684,
+            1.2745543412391347,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 45,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659512095276,
+            1.274554420764806,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 46,
+          "state": "KEYFRAME",
+          "position": [
+            103.79659484707867,
+            1.2745545002904777,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 47,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659272717035,
+            1.2745553250099666,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 48,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79659060726205,
+            1.2745561497294542,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 49,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79658848735372,
+            1.2745569744489398,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 50,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7965863674454,
+            1.2745577991684234,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 51,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79658424753708,
+            1.2745586238879054,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 52,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79658212762877,
+            1.2745594486073857,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 53,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79658000772045,
+            1.2745602733268646,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 54,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79657788781212,
+            1.274561098046341,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 55,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7965757679038,
+            1.2745619227658163,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 56,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79657364799546,
+            1.2745627474852899,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 57,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79657152808714,
+            1.2745635722047615,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 58,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79656940817881,
+            1.274564396924231,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 59,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79656728827048,
+            1.2745652216436993,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 60,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79656516836215,
+            1.2745660463631656,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 61,
+          "state": "KEYFRAME",
+          "position": [
+            103.79656304845382,
+            1.2745668710826303,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 62,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79655766366372,
+            1.2745688260871417,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 63,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79655227887362,
+            1.2745707810916413,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 64,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7965468940835,
+            1.27457273609613,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 65,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79654150929339,
+            1.2745746911006073,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 66,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79653612450325,
+            1.2745766461050732,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 67,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79653073971312,
+            1.274578601109525,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 68,
+          "state": "KEYFRAME",
+          "position": [
+            103.79652535492296,
+            1.2745805561139714,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 69,
+          "state": "INTERPOLATED",
+          "position": [
+            103.796512640676,
+            1.2745837759533436,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1956571128509041,
+            0
+          ]
+        },
+        {
+          "frame": 70,
+          "state": "KEYFRAME",
+          "position": [
+            103.79649992642902,
+            1.274586995792653,
+            0
+          ],
+          "rotation": [
+            0,
+            1.0280862348534074,
+            0
+          ]
+        },
+        {
+          "frame": 71,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649869015024,
+            1.2745874401449553,
+            0
+          ],
+          "rotation": [
+            0,
+            1.0280862348534074,
+            0
+          ]
+        },
+        {
+          "frame": 72,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649745387147,
+            1.2745878844972574,
+            0
+          ],
+          "rotation": [
+            0,
+            1.0280862348534074,
+            0
+          ]
+        },
+        {
+          "frame": 73,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649621759268,
+            1.2745883288495587,
+            0
+          ],
+          "rotation": [
+            0,
+            1.0280862348534074,
+            0
+          ]
+        },
+        {
+          "frame": 74,
+          "state": "KEYFRAME",
+          "position": [
+            103.7964949813139,
+            1.2745887732018595,
+            0
+          ],
+          "rotation": [
+            0,
+            1.0280862348534074,
+            0
+          ]
+        },
+        {
+          "frame": 75,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649139444707,
+            1.274591427110858,
+            0
+          ],
+          "rotation": [
+            0,
+            1.0280862348534074,
+            0
+          ]
+        },
+        {
+          "frame": 76,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79648780758023,
+            1.2745940810198542,
+            0
+          ],
+          "rotation": [
+            0,
+            1.0280862348534074,
+            0
+          ]
+        },
+        {
+          "frame": 77,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7964842207134,
+            1.2745967349288454,
+            0
+          ],
+          "rotation": [
+            0,
+            1.0280862348534074,
+            0
+          ]
+        },
+        {
+          "frame": 78,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79648063384654,
+            1.2745993888378313,
+            0
+          ],
+          "rotation": [
+            0,
+            1.0280862348534074,
+            0
+          ]
+        },
+        {
+          "frame": 79,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79647704697967,
+            1.2746020427468125,
+            0
+          ],
+          "rotation": [
+            0,
+            1.0280862348534074,
+            0
+          ]
+        },
+        {
+          "frame": 80,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79647346011281,
+            1.2746046966557885,
+            0
+          ],
+          "rotation": [
+            0,
+            1.0280862348534074,
+            0
+          ]
+        },
+        {
+          "frame": 81,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79646987324594,
+            1.2746073505647595,
+            0
+          ],
+          "rotation": [
+            0,
+            1.0280862348534074,
+            0
+          ]
+        },
+        {
+          "frame": 82,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79646628637906,
+            1.2746100044737256,
+            0
+          ],
+          "rotation": [
+            0,
+            1.0280862348534074,
+            0
+          ]
+        },
+        {
+          "frame": 83,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79646269951216,
+            1.274612658382687,
+            0
+          ],
+          "rotation": [
+            0,
+            1.0280862348534074,
+            0
+          ]
+        },
+        {
+          "frame": 84,
+          "state": "KEYFRAME",
+          "position": [
+            103.79645911264527,
+            1.2746153122916428,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 85,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79645553049461,
+            1.2746182184370045,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 86,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79645194834394,
+            1.2746211245823602,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 87,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79644836619327,
+            1.274624030727711,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 88,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79644478404259,
+            1.2746269368730565,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 89,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79644120189191,
+            1.2746298430183975,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 90,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79643761974123,
+            1.274632749163733,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 91,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79643403759052,
+            1.2746356553090643,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 92,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7964304554398,
+            1.2746385614543896,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 93,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7964268732891,
+            1.2746414675997109,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 94,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79642329113837,
+            1.2746443737450266,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 95,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79641970898763,
+            1.2746472798903372,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 96,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79641612683689,
+            1.2746501860356432,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 97,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79641254468613,
+            1.274653092180944,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 98,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79640896253538,
+            1.2746559983262402,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 99,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79640538038461,
+            1.274658904471531,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 100,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79640179823384,
+            1.2746618106168173,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 101,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79639821608306,
+            1.2746647167620981,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 102,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79639463393227,
+            1.274667622907374,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 103,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79639105178147,
+            1.274670529052645,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 104,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79638746963066,
+            1.274673435197911,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 105,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79638388747985,
+            1.274676341343172,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 106,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79638030532902,
+            1.2746792474884283,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 107,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79637672317818,
+            1.2746821536336794,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 108,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79637314102735,
+            1.2746850597789254,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 109,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7963695588765,
+            1.2746879659241666,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 110,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79636597672565,
+            1.2746908720694028,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 111,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79636239457479,
+            1.274693778214634,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 112,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79635881242392,
+            1.2746966843598602,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 113,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79635523027304,
+            1.274699590505081,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 114,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79635164812215,
+            1.2747024966502978,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 115,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79634806597124,
+            1.2747054027955087,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 116,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79634448382036,
+            1.274708308940715,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 117,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79634090166944,
+            1.2747112150859163,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 118,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79633731951853,
+            1.2747141212311128,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 119,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79633373736759,
+            1.274717027376304,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 120,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79633015521665,
+            1.2747199335214905,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 121,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79632657306571,
+            1.2747228396666717,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 122,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79632299091476,
+            1.2747257458118482,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 123,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7963194087638,
+            1.2747286519570193,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8745536001396521,
+            0
+          ]
+        },
+        {
+          "frame": 124,
+          "state": "KEYFRAME",
+          "position": [
+            103.79631582661283,
+            1.274731558102186,
+            0
+          ],
+          "rotation": [
+            0,
+            1.2732547349508883,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "type": "MOTORCYCLE",
+      "involvement": "VICTIM",
+      "severity": 3,
+      "timestamps": {
+        "T1": 4.599997,
+        "T2": 4.899999,
+        "T3": 4.899999,
+        "T4": 6.299999,
+        "T5": 6.799999
+      },
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "trajectory": [
+        {
+          "frame": 0,
+          "state": "KEYFRAME",
+          "position": [
+            103.79646914623709,
+            1.2745944769744983,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1467611308809307,
+            0
+          ]
+        },
+        {
+          "frame": 64,
+          "state": "KEYFRAME",
+          "position": [
+            103.79646914623709,
+            1.2745944769744983,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8039539110546248,
+            0
+          ]
+        },
+        {
+          "frame": 65,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79646689757416,
+            1.274594850908968,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8039539110546248,
+            0
+          ]
+        },
+        {
+          "frame": 66,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79646464891125,
+            1.2745952248434362,
+            0
+          ],
+          "rotation": [
+            0,
+            0.8039539110546248,
+            0
+          ]
+        },
+        {
+          "frame": 67,
+          "state": "KEYFRAME",
+          "position": [
+            103.79646240024833,
+            1.274595598777902,
+            0
+          ],
+          "rotation": [
+            0,
+            0.1227752012975415,
+            0
+          ]
+        },
+        {
+          "frame": 68,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79645728390786,
+            1.2745963947283656,
+            0
+          ],
+          "rotation": [
+            0,
+            0.1227752012975415,
+            0
+          ]
+        },
+        {
+          "frame": 69,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79645216756737,
+            1.27459719067882,
+            0
+          ],
+          "rotation": [
+            0,
+            0.1227752012975415,
+            0
+          ]
+        },
+        {
+          "frame": 70,
+          "state": "KEYFRAME",
+          "position": [
+            103.79644705122688,
+            1.274597986629264,
+            0
+          ],
+          "rotation": [
+            -1.1496575212017697,
+            1.3323775351936131,
+            1.0034752835207363
+          ]
+        },
+        {
+          "frame": 144,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79644705122688,
+            1.274597986629264,
+            0
+          ],
+          "rotation": [
+            -1.1496575212017697,
+            1.3323775351936131,
+            1.0034752835207363
+          ]
+        }
+      ]
+    },
+    {
+      "type": "MOTORCYCLE",
+      "involvement": "NONE",
+      "severity": 0,
+      "timestamps": {
+        "T1": -1,
+        "T2": -1,
+        "T3": -1,
+        "T4": -1,
+        "T5": -1
+      },
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "trajectory": [
+        {
+          "frame": 0,
+          "state": "KEYFRAME",
+          "position": [
+            103.79649365314394,
+            1.2745930430992038,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 1,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649357562268,
+            1.2745930875287237,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 2,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649349810141,
+            1.274593131958241,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 3,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649342058013,
+            1.2745931763877587,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 4,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649334305887,
+            1.2745932208172763,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 5,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7964932655376,
+            1.2745932652467933,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 6,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649318801633,
+            1.274593309676311,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 7,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649311049508,
+            1.2745933541058285,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 8,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649303297381,
+            1.2745933985353457,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 9,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649295545254,
+            1.2745934429648629,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 10,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649287793127,
+            1.2745934873943805,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 11,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649280041,
+            1.274593531823898,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 12,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649272288873,
+            1.2745935762534153,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 13,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649264536748,
+            1.2745936206829325,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 14,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7964925678462,
+            1.2745936651124499,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 15,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649249032494,
+            1.2745937095419673,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 16,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649241280366,
+            1.2745937539714849,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 17,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7964923352824,
+            1.274593798401002,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 18,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649225776113,
+            1.2745938428305195,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 19,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649218023987,
+            1.274593887260037,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 20,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7964921027186,
+            1.2745939316895543,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 21,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649202519732,
+            1.2745939761190717,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 22,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649194767606,
+            1.2745940205485888,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 23,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7964918701548,
+            1.2745940649781062,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 24,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649179263352,
+            1.2745941094076236,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 25,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649171511227,
+            1.274594153837141,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 26,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649163759099,
+            1.2745941982666584,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 27,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649156006973,
+            1.2745942426961756,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 28,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649148254846,
+            1.274594287125693,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 29,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649140502718,
+            1.2745943315552104,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 30,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649132750592,
+            1.2745943759847278,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 31,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649124998465,
+            1.2745944204142452,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 32,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649117246339,
+            1.2745944648437626,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 33,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649109494213,
+            1.2745945092732798,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 34,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649101742085,
+            1.2745945537027972,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 35,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649093989958,
+            1.2745945981323143,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 36,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649086237832,
+            1.2745946425618317,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 37,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649078485706,
+            1.2745946869913491,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 38,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649070733579,
+            1.2745947314208665,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 39,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649062981451,
+            1.2745947758503837,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 40,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649055229325,
+            1.2745948202799011,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 41,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649047477197,
+            1.2745948647094183,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 42,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649039725072,
+            1.2745949091389357,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 43,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649031972946,
+            1.274594953568453,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 44,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649024220818,
+            1.2745949979979703,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 45,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649016468692,
+            1.2745950424274877,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 46,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649008716564,
+            1.274595086857005,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 47,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79649000964437,
+            1.2745951312865225,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 48,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79648993212312,
+            1.2745951757160396,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 49,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79648985460184,
+            1.274595220145557,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 50,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79648977708058,
+            1.2745952645750742,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 51,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7964896995593,
+            1.2745953090045914,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 52,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79648962203804,
+            1.2745953534341088,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 53,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79648954451677,
+            1.274595397863626,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 54,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79648946699551,
+            1.2745954422931431,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 55,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79648938947425,
+            1.2745954867226605,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 56,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79648931195297,
+            1.274595531152178,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 57,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7964892344317,
+            1.2745955755816953,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 58,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79648915691044,
+            1.2745956200112127,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 59,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79648907938916,
+            1.27459566444073,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 60,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79648900186791,
+            1.274595708870247,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 61,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79648892434663,
+            1.2745957532997645,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1936880323362866,
+            0
+          ]
+        },
+        {
+          "frame": 62,
+          "state": "KEYFRAME",
+          "position": [
+            103.79648884682537,
+            1.2745957977292817,
+            0
+          ],
+          "rotation": [
+            0,
+            0.5029187000054698,
+            0
+          ]
+        },
+        {
+          "frame": 63,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7964869243797,
+            1.2745964451925653,
+            0
+          ],
+          "rotation": [
+            0,
+            0.5029187000054698,
+            0
+          ]
+        },
+        {
+          "frame": 64,
+          "state": "KEYFRAME",
+          "position": [
+            103.79648500193402,
+            1.2745970926558492,
+            0
+          ],
+          "rotation": [
+            0,
+            -0.18457109903934005,
+            0
+          ]
+        },
+        {
+          "frame": 65,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79647969533879,
+            1.274598022628854,
+            0
+          ],
+          "rotation": [
+            0,
+            -0.18457109903934005,
+            0
+          ]
+        },
+        {
+          "frame": 66,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79647438874355,
+            1.2745989526018475,
+            0
+          ],
+          "rotation": [
+            0,
+            -0.18457109903934005,
+            0
+          ]
+        },
+        {
+          "frame": 67,
+          "state": "KEYFRAME",
+          "position": [
+            103.79646908214829,
+            1.2745998825748301,
+            0
+          ],
+          "rotation": [
+            0,
+            -0.18457109903934005,
+            0
+          ]
+        },
+        {
+          "frame": 68,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79645992930057,
+            1.27459904601635,
+            0
+          ],
+          "rotation": [
+            0,
+            -0.18457109903934005,
+            0
+          ]
+        },
+        {
+          "frame": 69,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79645077645284,
+            1.2745982094578379,
+            0
+          ],
+          "rotation": [
+            0,
+            -0.18457109903934005,
+            0
+          ]
+        },
+        {
+          "frame": 70,
+          "state": "KEYFRAME",
+          "position": [
+            103.79644162360513,
+            1.274597372899293,
+            0
+          ],
+          "rotation": [
+            -3.3101483435884196e-16,
+            -0.18457109903933988,
+            1.1838905204669872
+          ]
+        }
+      ]
+    },
+    {
+      "type": "MOTORCYCLE",
+      "involvement": "NONE",
+      "severity": 0,
+      "timestamps": {
+        "T1": -1,
+        "T2": -1,
+        "T3": -1,
+        "T4": -1,
+        "T5": -1
+      },
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "trajectory": [
+        {
+          "frame": 0,
+          "state": "KEYFRAME",
+          "position": [
+            103.79647505604567,
+            1.2746088621913778,
+            0
+          ],
+          "rotation": [
+            0,
+            1.1830830826358063,
+            0
+          ]
+        },
+        {
+          "frame": 64,
+          "state": "KEYFRAME",
+          "position": [
+            103.79647505604567,
+            1.2746088621913778,
+            0
+          ],
+          "rotation": [
+            0,
+            0.5078614758680788,
+            0
+          ]
+        },
+        {
+          "frame": 65,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79647343806404,
+            1.2746097914635992,
+            0
+          ],
+          "rotation": [
+            0,
+            0.5078614758680788,
+            0
+          ]
+        },
+        {
+          "frame": 66,
+          "state": "INTERPOLATED",
+          "position": [
+            103.7964718200824,
+            1.2746107207358188,
+            0
+          ],
+          "rotation": [
+            0,
+            0.5078614758680788,
+            0
+          ]
+        },
+        {
+          "frame": 67,
+          "state": "KEYFRAME",
+          "position": [
+            103.79647020210076,
+            1.2746116500080376,
+            0
+          ],
+          "rotation": [
+            0,
+            -0.3248490975740083,
+            0
+          ]
+        },
+        {
+          "frame": 68,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79645879402835,
+            1.2746096669041154,
+            0
+          ],
+          "rotation": [
+            0,
+            -0.3248490975740083,
+            0
+          ]
+        },
+        {
+          "frame": 69,
+          "state": "INTERPOLATED",
+          "position": [
+            103.79644738595594,
+            1.2746076838001428,
+            0
+          ],
+          "rotation": [
+            0,
+            -0.3248490975740083,
+            0
+          ]
+        },
+        {
+          "frame": 70,
+          "state": "KEYFRAME",
+          "position": [
+            103.79643597788353,
+            1.2746057006961193,
+            0
+          ],
+          "rotation": [
+            -1.82578178347584e-16,
+            -0.3248490975740083,
+            0.9171553671073471
+          ]
+        }
+      ]
+    }
+  ]
+}
