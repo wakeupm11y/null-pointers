@@ -1,26 +1,42 @@
-
-{% extends 'base.html' %}
-
-{% block title %}Login{% endblock %}
-
-{% block content %}
+{% extends 'base.html' %} {% block title %}Login{% endblock %} {% block content
+%}
+<div class="login-container">
+  <div class="login-card">
     <h2>Anonymous Login</h2>
-    <form action="{{ url_for('auth.login') }}" method="POST">
-        <label for="anon_id">Enter Your 4-Character ID:</label>
-        <input type="text" id="anon_id" name="anon_id" pattern="[A-Za-z0-9]{4}" required>
-        <button type="submit" name="login">Login</button>
+    <form action="{{ url_for('auth.login') }}" method="POST" class="login-form">
+      <div class="form-group">
+        <label for="anon_id">
+          <i class="fa fa-user"></i>
+          <!-- Font Awesome icon -->
+          Enter Your 4-Character ID:
+        </label>
+        <input
+          type="text"
+          id="anon_id"
+          name="anon_id"
+          pattern="[A-Za-z0-9]{4}"
+          required
+        />
+      </div>
+      <button type="submit" name="login" class="btn primary-btn">Login</button>
     </form>
-    <form action="{{ url_for('auth.login') }}" method="POST">
-        <label for="New User">New User?</label>
-        <button type="submit" name="generateID">Generate your ID</button>
+    <div class="separator">or</div>
+    <form action="{{ url_for('auth.login') }}" method="POST" class="login-form">
+      <div class="form-group">
+        <label for="new-user">New User?</label>
+      </div>
+      <button type="submit" name="generateID" class="btn secondary-btn">
+        Generate your ID
+      </button>
     </form>
-    {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-            <ul>
-                {% for category, message in messages %}
-                    <li class="{{ category }}">{{ message }}</li>
-                {% endfor %}
-            </ul>
-        {% endif %}
-    {% endwith %}
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %}
+    <ul class="flash-messages">
+      {% for category, message in messages %}
+      <li class="{{ category }}">{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %} {% endwith %}
+  </div>
+</div>
 {% endblock %}
