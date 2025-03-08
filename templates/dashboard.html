@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block title %}Dashboard{% endblock %} {% block
+content %}
+<h1>Dashboard</h1>
+<p>Here is a summary of your uploads:</p>
+<div class="upload-summary">
+  {% for video in videos %}
+  <div class="video-summary">
+    <h3>{{ video.link }}</h3>
+    <p><strong>Title:</strong> {{ video.description }}</p>
+    <p>
+      <strong>Uploaded at:</strong> {{ video.created_at.strftime('%Y-%m-%d
+      %H:%M:%S') }}
+    </p>
+    <!-- Add more metadata as needed -->
+  </div>
+  {% else %}
+  <p>No uploads found.</p>
+  {% endfor %}
+</div>
+{% endblock %}
