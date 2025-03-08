@@ -41,7 +41,7 @@ def login_view():
 def home():
     return "Welcome to the home page!"  # Placeholder for the home page
 
-@login.route('/upload')
+@login.route('/upload.upload_page')
 def upload():
     return "Upload page placeholder"  # Placeholder for the upload page
 
