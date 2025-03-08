@@ -2,6 +2,86 @@ from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///maxi.db'
 
@@ -11,12 +91,18 @@ db = SQLAlchemy(app)
 
     #create the db model
 class Pointers(db.Model):
-    id = db.Column(db.Integer, primary_key = True)
-    name = db.Column(db.String(200), nullable = False)
-    date_created = db.Column(db.DateTime, default = datetime.utcnow)
+    primary_keys = db.Column(db.Integer, primary_key = True)
+    link = db.Column(db.String(500), nullable = False)
+    description = db.Column(db.Text, nullable = True)
+    verification_report = db.column(db.Text, nullable=True)
+    energy = db.column()
+    impact_force = db.column()
+    street_name = db.column()
+    coordinates = db.column()
+    migration_id = db.column()
 
     def __repr__(self):
-        return '<Name %r>' % self.id
+        return f'<Videoupload {self.primry_keys}>'
 
 
 if __name__ == "__main__":
