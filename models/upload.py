@@ -7,6 +7,7 @@ import json
     #create the db model
 class Pointers(db.Model):
     primary_keys = db.Column(db.Integer, primary_key = True)
+    title = db.Column(db.String(255), nullable=False)
     link = db.Column(db.String(500), nullable = False)
     description = db.Column(db.Text, nullable = True)
     verification_report = db.Column(db.Text, nullable=True)
