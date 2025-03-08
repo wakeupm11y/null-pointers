@@ -3,16 +3,21 @@ from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.dialects.postgresql import JSON, ARRAY
 from datetime import datetime
+from routes.auth import auth
+from routes.upload import upload
+from flask import Blueprint
 import json
 
 app = Flask(__name__)
+
+db = SQLAlchemy()
 
 app.config['SECRET_KEY'] = os.urandom(24).hex() #key for flash
 
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///maxi.db'
 
-    #initialise the database
+#initialise the database
 
 db.init_app(app)
 
@@ -20,7 +25,7 @@ app.register_blueprint(auth)
 app.register_blueprint(upload)
 
 
-    #create the db model
+#create the db model
 class Pointers(db.Model):
     primary_keys = db.Column(db.Integer, primary_key = True)
     link = db.Column(db.String(500), nullable = False)
@@ -42,7 +47,9 @@ class Pointers(db.Model):
     def deserialize_coordinates(coords):
         return json.loads(self.coordinates) if self.coordinates else []    
     
-
+@app.route('/')
+def home():
+    return render_template('home.html')
 
 if __name__ == "__main__":
     with app.app_context():
