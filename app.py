@@ -1,10 +1,10 @@
 import os
-from flask import Flask, render_template, request
-from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
 from models import db
 from routes.auth import auth
 from routes.upload import upload
+from flask import Flask, render_template, request
+
+
 
 app = Flask(__name__)
 
@@ -19,20 +19,6 @@ db.init_app(app)
 
 app.register_blueprint(auth)
 app.register_blueprint(upload)
-
-
-    #create the db model
-class Pointers(db.Model):
-    id = db.Column(db.Integer, primary_key = True)
-    name = db.Column(db.String(200), nullable = False)
-    date_created = db.Column(db.DateTime, default = datetime.utcnow)
-
-    def __repr__(self):
-        return '<Name %r>' % self.id
-    
-@app.route("/")
-def home():
-    return render_template("home.html")
 
 
 if __name__ == "__main__":
