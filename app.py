@@ -1,16 +1,14 @@
 import os
-from flask import Flask, render_template, request
-from flask_sqlalchemy import SQLAlchemy
+from flask import Flask, render_template
 from sqlalchemy.dialects.postgresql import JSON, ARRAY
 from datetime import datetime
 from routes.auth import auth
 from routes.upload import upload
-from flask import Blueprint
+from models import db
 import json
 
 app = Flask(__name__)
 
-db = SQLAlchemy()
 
 app.config['SECRET_KEY'] = os.urandom(24).hex() #key for flash
 
