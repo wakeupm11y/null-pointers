@@ -5,9 +5,17 @@
 {% block title %}Upload{% endblock %}
 
 {% block content %}
-    <h2>Upload Your Footage</h2>
-    <form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" required>
+<h2>Upload Your Footage</h2>
+<form action="{{ url_for('upload.upload_page') }}" method="POST" enctype="multipart/form-data">
+    
+        <!--Video Title Input-->
+        <label for="title">Video Title:</label>
+        <input type="text" id="video_title" name"video_title" placeholder="Give the video a title" required>
+
+        <input type="file" name="file" accept="video/*" muliple required>
+        <label for="caption">Caption:</label>
+        
+        <input type="text" id="video_caption" name"video_caption" placeholder="Caption">
         <button type="submit">Upload</button>
-    </form>
+</form>
 {% endblock %}
