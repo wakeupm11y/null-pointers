@@ -1,9 +1,13 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+from routes.upload import upload
+from routes.auth import auth
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///maxi.db'
+app.register_blueprint(upload)
+app.register_blueprint(auth)
 
 
     #initialise the database
