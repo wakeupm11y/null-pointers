@@ -1,9 +1,9 @@
 # Resembler Hackathon README template
 
-- Team Name: REPLACE
-- Member #1: REPLACE
-- Member #2: REPLACE
-- Member #3: REPLACE
+- Team Name: Null-pointers
+- Member #1: Dichaba Mofokeng
+- Member #2: Sive Sijiyo
+- Member #3: Moleboheng Mahlatji
 
 # Project description
 Please provide a comprehensive description of your approach to the given problem statement. Add images, charts, links, anything that you think is necessary to describe your submission.
